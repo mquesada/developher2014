@@ -124,7 +124,7 @@ class LinkedInClient {
                 self.parseUser.Industry = User.currentUser?.industry
                 self.parseUser.username = User.currentUser?.email
                 self.parseUser.password = User.currentUser?.firstName
-                
+                self.parseUser.isPublic = false
                 if let lat = User.currentUser?.location?.latitude {
                     self.parseUser.latitude = lat
                 }
