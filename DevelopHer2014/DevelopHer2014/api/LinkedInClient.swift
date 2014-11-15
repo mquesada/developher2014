@@ -12,6 +12,7 @@ let CLIENT_SECRET = "4PAleAaobXE9YXcF"
 let STATE = "178E7FE9CA26148E53F8644CA05F3A0B"
 
 class LinkedInClient {
+    var parseUser:ParseUser?
     
     var loginCompletion: ((user: User?, error: NSError?) -> ())?
     
@@ -74,6 +75,22 @@ class LinkedInClient {
                 println("User Profile retrieved from LinkedIn")
                 println(result)
                 User.currentUser = User(data: result as NSDictionary)
+                self.parseUser?.firstName = User.currentUser?.firstName
+                self.parseUser?.lastName = User.currentUser?.lastName
+                self.parseUser?.email = User.currentUser?.email
+                self.parseUser?.headline = User.currentUser?.headline
+                
+                
+                self.parseUser?.signUpInBackgroundWithBlock({ (successed:Bool, error:NSError!) -> Void in
+                    
+                    if successed {
+                        println("use added successfully")
+
+                    }else{
+                        println("use added :\(error)")
+                        
+                    }
+                })
             }, failure: { (request, error) -> Void in
                 println("Error retrieving user profile!!")
                 println(error)

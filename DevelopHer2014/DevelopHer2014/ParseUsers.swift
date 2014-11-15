@@ -18,13 +18,25 @@ class ParseUser:  PFUser,PFSubclassing {
         get {return objectForKey("Name") as String?}
         set {setObject(newValue, forKey: "Name")}
     }
+    var firstName :String? {
+        get {return objectForKey("FirstName") as String?}
+        set {setObject(newValue, forKey: "FirstName")}
+    }
+    var lastName :String? {
+        get {return objectForKey("LastName") as String?}
+        set {setObject(newValue, forKey: "LastName")}
+    }
+    var headline :String? {
+        get {return objectForKey("HeadLine") as String?}
+        set {setObject(newValue, forKey: "HeadLine")}
+    }
     
     
     var interests : [ParseInterest] {
         get {return objectForKey("InterestType") as [ParseInterest]}
         set {setObject(newValue, forKey: "InterestType")}
     }
-
+    
     
 }
 
