@@ -10,7 +10,7 @@ import UIKit
 
 class PeopleDetailViewController: UIViewController {
     
-    var user: User!
+    var user: ParseUser!
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -19,14 +19,10 @@ class PeopleDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (user == nil) {
-            user = User.currentUser
-        }
-
-        self.nameLabel.text = user.firstName + " " + user.lastName
+        self.nameLabel.text = user.firstName! + " " + user.lastName!
         self.headlineLabel.text = user.headline
-        self.industryLabel.text = user.industry
-        self.profileImageView.setImageWithURL(user.profileImageUrl)        
+        self.industryLabel.text = user.Industry
+        self.profileImageView.setImageWithURL(NSURL(string: user.profileImageUrl!))
     }
 
     override func didReceiveMemoryWarning() {

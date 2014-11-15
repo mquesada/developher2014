@@ -50,18 +50,26 @@ class PeopleListViewController: UIViewController, UITableViewDelegate, UITableVi
         
         var cell = tableView.dequeueReusableCellWithIdentifier("PeopleCell") as PeopleTableViewCell
         let user = self.allUsers?[indexPath.row] as  ParseUser!
+        cell.user = user
         cell.nameLabel.text = user.name!
         cell.headLineLabel.text = user.headline!
         cell.industryLabel.text = user.Industry!
-         let url = NSURL(string: user.profileImageUrl!)
+        let url = NSURL(string: user.profileImageUrl!)
         cell.profileImageView.setImageWithURL(url)
-  
         
         return cell
     }
     
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+       let user = self.allUsers?[indexPath.row] as  ParseUser!
+        
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "ShowDetailSegue"){
+            var cell = sender as PeopleTableViewCell
+            var vc = segue.destinationViewController as PeopleDetailViewController
+            vc.user = cell.user
             println("Go to user detail")
         }
     }

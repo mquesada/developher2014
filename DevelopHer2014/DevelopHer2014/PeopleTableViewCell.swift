@@ -14,6 +14,8 @@ class PeopleTableViewCell: UITableViewCell {
     //industry
     //location
     //headline
+    
+    var user : ParseUser!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var headLineLabel: UILabel!
