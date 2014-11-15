@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5F3390701A171A8500A89E3A"
-               BuildableName = "DevelopHer2014.app"
-               BlueprintName = "DevelopHer2014"
-               ReferencedContainer = "container:DevelopHer2014.xcodeproj">
+               BuildableName = "SavvyNet.app"
+               BlueprintName = "SavvyNet"
+               ReferencedContainer = "container:SavvyNet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5F3390851A171A8500A89E3A"
-               BuildableName = "DevelopHer2014Tests.xctest"
-               BlueprintName = "DevelopHer2014Tests"
-               ReferencedContainer = "container:DevelopHer2014.xcodeproj">
+               BuildableName = "SavvyNetTests.xctest"
+               BlueprintName = "SavvyNetTests"
+               ReferencedContainer = "container:SavvyNet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5F3390851A171A8500A89E3A"
-               BuildableName = "DevelopHer2014Tests.xctest"
-               BlueprintName = "DevelopHer2014Tests"
-               ReferencedContainer = "container:DevelopHer2014.xcodeproj">
+               BuildableName = "SavvyNetTests.xctest"
+               BlueprintName = "SavvyNetTests"
+               ReferencedContainer = "container:SavvyNet.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F3390701A171A8500A89E3A"
-            BuildableName = "DevelopHer2014.app"
-            BlueprintName = "DevelopHer2014"
-            ReferencedContainer = "container:DevelopHer2014.xcodeproj">
+            BuildableName = "SavvyNet.app"
+            BlueprintName = "SavvyNet"
+            ReferencedContainer = "container:SavvyNet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F3390701A171A8500A89E3A"
-            BuildableName = "DevelopHer2014.app"
-            BlueprintName = "DevelopHer2014"
-            ReferencedContainer = "container:DevelopHer2014.xcodeproj">
+            BuildableName = "SavvyNet.app"
+            BlueprintName = "SavvyNet"
+            ReferencedContainer = "container:SavvyNet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5F3390701A171A8500A89E3A"
-            BuildableName = "DevelopHer2014.app"
-            BlueprintName = "DevelopHer2014"
-            ReferencedContainer = "container:DevelopHer2014.xcodeproj">
+            BuildableName = "SavvyNet.app"
+            BlueprintName = "SavvyNet"
+            ReferencedContainer = "container:SavvyNet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
