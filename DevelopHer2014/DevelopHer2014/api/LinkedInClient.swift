@@ -24,7 +24,7 @@ class LinkedInClient {
             clientId: CLIENT_ID,
             clientSecret: CLIENT_SECRET,
             state: STATE,
-            grantedAccess: ["r_fullprofile", "r_network", "r_emailaddress", "r_contactinfo"])
+            grantedAccess: ["r_fullprofile", "r_network", "r_emailaddress", "r_contactinfo", "w_messages"])
         
         self.client = LIALinkedInHttpClient(forApplication: application, presentingViewController: nil)
     }
@@ -64,6 +64,62 @@ class LinkedInClient {
                     
                 }
         }
+    }
+    
+    func sendInvitation(user: User, message: String, success: () -> Void, failure: (error: NSError!) -> Void) {
+        var accessToken = self.client.accessToken()
+        
+        let urlString = "https://api.linkedin.com/v1/people/~/mailbox?oauth2_access_token=\(accessToken)&format=json"
+        var body = [
+            "recipients" :
+            [
+                "values": [
+                    ["person":
+                        ["_path": "/people/email=\(user.email)", "first-name": user.firstName, "last-name": user.lastName]
+                    ]
+                ],
+            ],
+            "subject": "Invitation to Connect",
+            "body": message,
+            "item-content": [
+                "invitation-request": ["connect-type": "friend"]
+            ]
+            
+        ]
+        
+        
+        var bodyJson = NSJSONSerialization.dataWithJSONObject(body, options: NSJSONWritingOptions.PrettyPrinted, error: nil)        
+        var bodyStr = NSString(data: bodyJson!, encoding: NSUTF8StringEncoding)
+        println(bodyStr!)
+        
+        var manager = AFHTTPRequestOperationManager()
+        var requestSerializer = AFJSONRequestSerializer()
+        var request = requestSerializer.requestWithMethod("POST", URLString: urlString, parameters: body, error: nil)
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("json", forHTTPHeaderField: "x-li-format")
+        request.addValue("\(bodyStr?.length)", forHTTPHeaderField: "Content-Length")
+        manager.requestSerializer = requestSerializer
+
+//        var operation = self.client.HTTPRequestOperationWithRequest(request,
+//            success: { (request, result) -> Void in
+//                success()
+//            }, failure: { (request, error) -> Void in
+//                println("Error=")
+//                failure(error: error)
+//            }
+//        )
+//        
+//        self.client.operationQueue.addOperation(operation)
+        
+        manager.POST(urlString, parameters: nil, success: { (operation, response) -> Void in
+            success()
+        }) { (operation, error) -> Void in
+            println(operation)
+            println("Error=")
+            failure(error: error)
+        }
+        
     }
     
     private func getUserProfile() {

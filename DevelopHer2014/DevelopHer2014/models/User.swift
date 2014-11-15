@@ -13,7 +13,6 @@ var userDidLoginNotification = "userDidLoginNotification"
 var userDidLogoutNotification = "userDidLogoutNotification"
 
 class User {
-    
     var id: String!
     var firstName: String!
     var lastName: String!
@@ -27,6 +26,7 @@ class User {
     init(data: NSDictionary) {
         self.data = data
         
+        self.id = data["id"] as String
         self.firstName = data["firstName"] as String
         self.lastName = data["lastName"] as String
         self.headline = data["headline"] as String
