@@ -27,6 +27,8 @@
 		D086B4541A17659F0058D031 /* peopleList.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4511A17659F0058D031 /* peopleList.png */; };
 		D086B4551A17659F0058D031 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4521A17659F0058D031 /* star.png */; };
 		D086B4571A1767F80058D031 /* whatsThis.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4561A1767F80058D031 /* whatsThis.png */; };
+		D086B4591A1777BB0058D031 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086B4581A1777BB0058D031 /* PeopleListViewController.swift */; };
+		D086B45B1A17782C0058D031 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086B45A1A17782C0058D031 /* PeopleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		D086B4511A17659F0058D031 /* peopleList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = peopleList.png; path = Images.xcassets/peopleList.png; sourceTree = "<group>"; };
 		D086B4521A17659F0058D031 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Images.xcassets/star.png; sourceTree = "<group>"; };
 		D086B4561A1767F80058D031 /* whatsThis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whatsThis.png; path = Images.xcassets/whatsThis.png; sourceTree = "<group>"; };
+		D086B4581A1777BB0058D031 /* PeopleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListViewController.swift; path = controllers/PeopleListViewController.swift; sourceTree = "<group>"; };
+		D086B45A1A17782C0058D031 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		DAE3905911AB1FCF511EE800 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,7 @@
 				5F33907F1A171A8500A89E3A /* LaunchScreen.xib */,
 				5F3390741A171A8500A89E3A /* Supporting Files */,
 				8F05F47F1A17212B00698A54 /* DevelopHer2014-Bridging-Header.h */,
+				D086B45A1A17782C0058D031 /* PeopleTableViewCell.swift */,
 			);
 			path = DevelopHer2014;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			children = (
 				5F3390A31A1723E500A89E3A /* LoginViewController.swift */,
 				D086B44D1A17651E0058D031 /* MainViewController.swift */,
+				D086B4581A1777BB0058D031 /* PeopleListViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -349,12 +355,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3798541A1757440027FB9F /* ParseCategory.swift in Sources */,
+				D086B4591A1777BB0058D031 /* PeopleListViewController.swift in Sources */,
 				D086B44E1A17651E0058D031 /* MainViewController.swift in Sources */,
 				5F3390A81A17241200A89E3A /* LinkedInClient.swift in Sources */,
 				8F3798561A1757440027FB9F /* ParseUser.swift in Sources */,
 				5F3390A41A1723E500A89E3A /* LoginViewController.swift in Sources */,
 				5F3390AD1A172F8000A89E3A /* LocationManager.swift in Sources */,
 				5F3390791A171A8500A89E3A /* ViewController.swift in Sources */,
+				D086B45B1A17782C0058D031 /* PeopleTableViewCell.swift in Sources */,
 				5F3390AA1A17259600A89E3A /* User.swift in Sources */,
 				5F3390AF1A172FF500A89E3A /* UserLocation.swift in Sources */,
 				8F3798551A1757440027FB9F /* ParseInterest.swift in Sources */,
