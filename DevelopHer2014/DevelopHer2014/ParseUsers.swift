@@ -24,7 +24,7 @@ class ParseUser:  PFUser,PFSubclassing {
         get {return objectForKey("InterestType") as [ParseInterest]}
         set {setObject(newValue, forKey: "InterestType")}
     }
-
+    
     
 }
 
