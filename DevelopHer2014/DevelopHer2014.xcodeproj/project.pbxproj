@@ -19,9 +19,9 @@
 		5F3390AA1A17259600A89E3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3390A91A17259600A89E3A /* User.swift */; };
 		5F3390AD1A172F8000A89E3A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3390AC1A172F8000A89E3A /* LocationManager.swift */; };
 		5F3390AF1A172FF500A89E3A /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3390AE1A172FF500A89E3A /* UserLocation.swift */; };
-		8F3EF6881A17368400F6F621 /* ParseUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF6871A17368400F6F621 /* ParseUsers.swift */; };
-		8F3EF68A1A17369400F6F621 /* ParseInterests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF6891A17369300F6F621 /* ParseInterests.swift */; };
-		8F3EF68C1A1736A000F6F621 /* ParseCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF68B1A1736A000F6F621 /* ParseCategories.swift */; };
+		8F3EF68E1A174F4A00F6F621 /* ParseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF68D1A174F4A00F6F621 /* ParseUser.swift */; };
+		8F3EF6901A174F6D00F6F621 /* ParseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF68F1A174F6D00F6F621 /* ParseCategory.swift */; };
+		8F3EF6921A174F9300F6F621 /* ParseInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF6911A174F9300F6F621 /* ParseInterest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		5F3390AC1A172F8000A89E3A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = api/LocationManager.swift; sourceTree = "<group>"; };
 		5F3390AE1A172FF500A89E3A /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserLocation.swift; path = models/UserLocation.swift; sourceTree = "<group>"; };
 		8F05F47F1A17212B00698A54 /* DevelopHer2014-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevelopHer2014-Bridging-Header.h"; sourceTree = "<group>"; };
-		8F3EF6871A17368400F6F621 /* ParseUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseUsers.swift; sourceTree = "<group>"; };
-		8F3EF6891A17369300F6F621 /* ParseInterests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseInterests.swift; sourceTree = "<group>"; };
-		8F3EF68B1A1736A000F6F621 /* ParseCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseCategories.swift; sourceTree = "<group>"; };
+		8F3EF68D1A174F4A00F6F621 /* ParseUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseUser.swift; sourceTree = "<group>"; };
+		8F3EF68F1A174F6D00F6F621 /* ParseCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseCategory.swift; sourceTree = "<group>"; };
+		8F3EF6911A174F9300F6F621 /* ParseInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseInterest.swift; sourceTree = "<group>"; };
 		A5CBC9659EE139F7A139A9A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DAE3905911AB1FCF511EE800 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,9 +171,9 @@
 			children = (
 				5F3390A91A17259600A89E3A /* User.swift */,
 				5F3390AE1A172FF500A89E3A /* UserLocation.swift */,
-				8F3EF6871A17368400F6F621 /* ParseUsers.swift */,
-				8F3EF6891A17369300F6F621 /* ParseInterests.swift */,
-				8F3EF68B1A1736A000F6F621 /* ParseCategories.swift */,
+				8F3EF6911A174F9300F6F621 /* ParseInterest.swift */,
+				8F3EF68D1A174F4A00F6F621 /* ParseUser.swift */,
+				8F3EF68F1A174F6D00F6F621 /* ParseCategory.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -321,15 +321,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F3EF6881A17368400F6F621 /* ParseUsers.swift in Sources */,
 				5F3390A81A17241200A89E3A /* LinkedInClient.swift in Sources */,
+				8F3EF68E1A174F4A00F6F621 /* ParseUser.swift in Sources */,
 				5F3390A41A1723E500A89E3A /* LoginViewController.swift in Sources */,
-				8F3EF68C1A1736A000F6F621 /* ParseCategories.swift in Sources */,
+				8F3EF6901A174F6D00F6F621 /* ParseCategory.swift in Sources */,
 				5F3390AD1A172F8000A89E3A /* LocationManager.swift in Sources */,
 				5F3390791A171A8500A89E3A /* ViewController.swift in Sources */,
 				5F3390AA1A17259600A89E3A /* User.swift in Sources */,
+				8F3EF6921A174F9300F6F621 /* ParseInterest.swift in Sources */,
 				5F3390AF1A172FF500A89E3A /* UserLocation.swift in Sources */,
-				8F3EF68A1A17369400F6F621 /* ParseInterests.swift in Sources */,
 				5F3390771A171A8500A89E3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

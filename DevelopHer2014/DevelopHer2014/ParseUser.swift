@@ -1,11 +1,3 @@
-//
-//  ParseUser.swift
-//  CheckedIn
-//
-//  Created by Cindy Zheng on 10/27/14.
-//  Copyright (c) 2014 Group6. All rights reserved.
-//
-
 import UIKit
 
 class ParseUser:  PFUser,PFSubclassing {
@@ -30,7 +22,7 @@ class ParseUser:  PFUser,PFSubclassing {
         get {return objectForKey("HeadLine") as String?}
         set {setObject(newValue, forKey: "HeadLine")}
     }
-
+    
     var profileImageUrl :String? {
         get {return objectForKey("profileImageURL") as String?}
         set {setObject(newValue, forKey: "profileImageURL")}

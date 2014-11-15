@@ -75,7 +75,7 @@ class LinkedInClient {
                 println(result)
                 User.currentUser = User(data: result as NSDictionary)
                 self.parseUser.firstName = User.currentUser?.firstName
-                 self.parseUser.lastName = User.currentUser?.lastName
+                self.parseUser.lastName = User.currentUser?.lastName
                 self.parseUser.email = User.currentUser?.email
                 self.parseUser.headline = User.currentUser?.headline
                 self.parseUser.Indurstry = User.currentUser?.industry
@@ -93,12 +93,10 @@ class LinkedInClient {
                 self.parseUser.signUpInBackgroundWithBlock({ (successed:Bool, error:NSError!) -> Void in
                     
                     if successed {
- 
                         println("use added successfully")
-
                     }else{
                         println("use added :\(error)")
-                        
+        
                     }
                 })
             }, failure: { (request, error) -> Void in

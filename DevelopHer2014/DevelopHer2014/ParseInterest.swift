@@ -1,10 +1,12 @@
 //
-//  ParseEvent.swift
-//  CheckedIn
+//  ParseInterest.swift
+//  DevelopHer2014
 //
-//  Created by Cindy Zheng on 10/27/14.
-//  Copyright (c) 2014 Group6. All rights reserved.
+//  Created by Cindy Zheng on 11/15/14.
+//  Copyright (c) 2014 Maricel-Betsy-Cindy-Alexa-Diana. All rights reserved.
 //
+
+
 
 import UIKit
 
@@ -30,5 +32,5 @@ class ParseInterest: PFObject,PFSubclassing {
         get {return objectForKey("Categories") as ParseCategory}
         set {setObject(newValue, forKey: "Categories")}
     }
-
+    
 }
