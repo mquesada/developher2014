@@ -67,10 +67,7 @@ class LinkedInClient {
     
     private func getUserProfile() {
         
-        println("\n[ ]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
-
-        
-        var accessToken = self.client.accessToken()
+         var accessToken = self.client.accessToken()
         let urlString = "https://api.linkedin.com/v1/people/~:(id,first-name,last-name,headline,picture-url,industry,email-address)?oauth2_access_token=\(accessToken)&format=json"
         self.client.GET(urlString, parameters: nil,
             success: { (request, result) -> Void in
@@ -88,8 +85,7 @@ class LinkedInClient {
                 self.parseUser.signUpInBackgroundWithBlock({ (successed:Bool, error:NSError!) -> Void in
                     
                     if successed {
-                        println("\n[ ]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
-
+ 
                         println("use added successfully")
 
                     }else{
