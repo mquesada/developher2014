@@ -22,8 +22,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LocationManagerDelegate {
         
         Parse.setApplicationId("6RJu3SH5YkYeAmkRuBSFYlVQDwsh9ssdIWmoHJUZ", clientKey: "OXrovYrxJfmQpEP4cWjgNllk3rmc6PqCjqKDAvCq")
 
-        
+        customizeUI()
         return true
+    }
+    
+    //App-wide UI customization (i.e. Navigation bar color, button color, etc
+    
+    func customizeUI(){
+        
+        //Navigation title font R:264 G:142 B:86
+        let titleColorDictionary: NSDictionary = [NSForegroundColorAttributeName:UIColor(red: 264/255, green: 142/255, blue: 86/255, alpha: 1)]
+        UINavigationBar.appearance().titleTextAttributes = titleColorDictionary
+        //Navigation item font R:253 G:193 B:47
+        UINavigationBar.appearance().tintColor = UIColor(red: 253/255, green: 193/255, blue: 47/255, alpha: 1)
+        //Navigation bar R:153 G:134 B:117
+        UINavigationBar.appearance().barTintColor = UIColor(red: 153/255, green: 134/255, blue: 117/255, alpha: 1)
+        //Regular buttons background R:122 G:192 B:201
+        UIButton.appearance().tintColor = UIColor.whiteColor()
+        UIButton.appearance().backgroundColor = UIColor(red: 122/255, green: 192/255, blue: 168/201, alpha: 1)
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
