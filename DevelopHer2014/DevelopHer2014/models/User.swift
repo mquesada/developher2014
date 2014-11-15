@@ -22,6 +22,7 @@ class User {
     var email: String!
     var industry: String!
     var data: NSDictionary!
+    var location: UserLocation!
     
     init(data: NSDictionary) {
         self.data = data
