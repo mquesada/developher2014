@@ -35,7 +35,17 @@ class ParseUser:  PFUser,PFSubclassing {
         get {return objectForKey("profileImageURL") as String?}
         set {setObject(newValue, forKey: "profileImageURL")}
     }
-
+    var latitude :Double? {
+        get {return objectForKey("Latitude") as Double?}
+        set {setObject(newValue, forKey: "Latitude")}
+    }
+    
+    var longitude :Double? {
+        get {return objectForKey("Longitude") as Double?}
+        set {setObject(newValue, forKey: "Longitude")}
+    }
+    
+    
     var Indurstry :String? {
         get {return objectForKey("Indurstry") as String?}
         set {setObject(newValue, forKey: "Indurstry")}

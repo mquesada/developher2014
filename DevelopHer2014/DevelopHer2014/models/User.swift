@@ -33,7 +33,7 @@ class User {
         self.profileImageUrl = NSURL(string: data["pictureUrl"] as String)
         self.email = data["emailAddress"] as String
         self.industry = data["industry"] as String
-    }
+     }
     
     class var currentUser: User? {
         get {

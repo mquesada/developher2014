@@ -82,6 +82,14 @@ class LinkedInClient {
                 self.parseUser.username = User.currentUser?.email
                 self.parseUser.password = User.currentUser?.firstName
                 
+                if let lat = User.currentUser?.location?.latitude {
+                    self.parseUser.latitude = lat
+                }
+                
+                if let long = User.currentUser?.location?.longitude {
+                    self.parseUser.longitude = long
+                }
+                
                 self.parseUser.signUpInBackgroundWithBlock({ (successed:Bool, error:NSError!) -> Void in
                     
                     if successed {
