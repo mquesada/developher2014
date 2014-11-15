@@ -23,6 +23,9 @@
 		8F3798561A1757440027FB9F /* ParseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3798531A1757440027FB9F /* ParseUser.swift */; };
 		D03DC1191A17DCD300DDC8EF /* launchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D03DC1181A17DCD300DDC8EF /* launchImage.png */; };
 		D03DC11B1A17E88C00DDC8EF /* fakeDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = D03DC11A1A17E88C00DDC8EF /* fakeDetail.png */; };
+		D03DC11F1A17F82F00DDC8EF /* appIcon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = D03DC11C1A17F82F00DDC8EF /* appIcon-58.png */; };
+		D03DC1201A17F82F00DDC8EF /* appIcon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = D03DC11D1A17F82F00DDC8EF /* appIcon-80.png */; };
+		D03DC1211A17F82F00DDC8EF /* appIcon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = D03DC11E1A17F82F00DDC8EF /* appIcon-120.png */; };
 		D086B44E1A17651E0058D031 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086B44D1A17651E0058D031 /* MainViewController.swift */; };
 		D086B4531A17659F0058D031 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4501A17659F0058D031 /* home.png */; };
 		D086B4541A17659F0058D031 /* peopleList.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4511A17659F0058D031 /* peopleList.png */; };
@@ -68,6 +71,9 @@
 		A5CBC9659EE139F7A139A9A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D03DC1181A17DCD300DDC8EF /* launchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchImage.png; path = Images.xcassets/launchImage.png; sourceTree = "<group>"; };
 		D03DC11A1A17E88C00DDC8EF /* fakeDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fakeDetail.png; path = Images.xcassets/fakeDetail.png; sourceTree = "<group>"; };
+		D03DC11C1A17F82F00DDC8EF /* appIcon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appIcon-58.png"; path = "Images.xcassets/appIcon-58.png"; sourceTree = "<group>"; };
+		D03DC11D1A17F82F00DDC8EF /* appIcon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appIcon-80.png"; path = "Images.xcassets/appIcon-80.png"; sourceTree = "<group>"; };
+		D03DC11E1A17F82F00DDC8EF /* appIcon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "appIcon-120.png"; path = "Images.xcassets/appIcon-120.png"; sourceTree = "<group>"; };
 		D086B44D1A17651E0058D031 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = controllers/MainViewController.swift; sourceTree = "<group>"; };
 		D086B4501A17659F0058D031 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Images.xcassets/home.png; sourceTree = "<group>"; };
 		D086B4511A17659F0058D031 /* peopleList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = peopleList.png; path = Images.xcassets/peopleList.png; sourceTree = "<group>"; };
@@ -215,6 +221,9 @@
 		D086B44F1A17658E0058D031 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D03DC11C1A17F82F00DDC8EF /* appIcon-58.png */,
+				D03DC11D1A17F82F00DDC8EF /* appIcon-80.png */,
+				D03DC11E1A17F82F00DDC8EF /* appIcon-120.png */,
 				D03DC11A1A17E88C00DDC8EF /* fakeDetail.png */,
 				D03DC1181A17DCD300DDC8EF /* launchImage.png */,
 				D086B4641A17911B0058D031 /* logo.png */,
@@ -309,11 +318,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03DC1211A17F82F00DDC8EF /* appIcon-120.png in Resources */,
 				D03DC1191A17DCD300DDC8EF /* launchImage.png in Resources */,
+				D03DC11F1A17F82F00DDC8EF /* appIcon-58.png in Resources */,
 				D086B4571A1767F80058D031 /* whatsThis.png in Resources */,
 				D086B45D1A178D0F0058D031 /* logoutButton.png in Resources */,
 				D086B4651A17911B0058D031 /* logo.png in Resources */,
 				D03DC11B1A17E88C00DDC8EF /* fakeDetail.png in Resources */,
+				D03DC1201A17F82F00DDC8EF /* appIcon-80.png in Resources */,
 				D086B4531A17659F0058D031 /* home.png in Resources */,
 				5F33907C1A171A8500A89E3A /* Main.storyboard in Resources */,
 				D086B4541A17659F0058D031 /* peopleList.png in Resources */,
