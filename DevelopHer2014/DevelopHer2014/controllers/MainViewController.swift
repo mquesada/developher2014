@@ -11,11 +11,13 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var whosHereButton: UIButton!
+    var titleImageView = UIImageView(image: UIImage(named: "home.png"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.titleView = titleImageView
     }
 
     override func didReceiveMemoryWarning() {

@@ -26,6 +26,7 @@
 		D086B4531A17659F0058D031 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4501A17659F0058D031 /* home.png */; };
 		D086B4541A17659F0058D031 /* peopleList.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4511A17659F0058D031 /* peopleList.png */; };
 		D086B4551A17659F0058D031 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4521A17659F0058D031 /* star.png */; };
+		D086B4571A1767F80058D031 /* whatsThis.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4561A1767F80058D031 /* whatsThis.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		D086B4501A17659F0058D031 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Images.xcassets/home.png; sourceTree = "<group>"; };
 		D086B4511A17659F0058D031 /* peopleList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = peopleList.png; path = Images.xcassets/peopleList.png; sourceTree = "<group>"; };
 		D086B4521A17659F0058D031 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Images.xcassets/star.png; sourceTree = "<group>"; };
+		D086B4561A1767F80058D031 /* whatsThis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whatsThis.png; path = Images.xcassets/whatsThis.png; sourceTree = "<group>"; };
 		DAE3905911AB1FCF511EE800 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +201,7 @@
 		D086B44F1A17658E0058D031 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D086B4561A1767F80058D031 /* whatsThis.png */,
 				D086B4501A17659F0058D031 /* home.png */,
 				D086B4511A17659F0058D031 /* peopleList.png */,
 				D086B4521A17659F0058D031 /* star.png */,
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D086B4571A1767F80058D031 /* whatsThis.png in Resources */,
 				D086B4531A17659F0058D031 /* home.png in Resources */,
 				5F33907C1A171A8500A89E3A /* Main.storyboard in Resources */,
 				D086B4541A17659F0058D031 /* peopleList.png in Resources */,
