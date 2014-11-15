@@ -69,6 +69,27 @@ class MainViewController: UIViewController {
         println("Click on Who's here button")
         self.goPublic = true
         self.updateRightBarButton(true)
+        
+        
+        var query = PFUser.query() as PFQuery
+        query.whereKey("username", equalTo: User.currentUser?.email)
+        query.findObjectsInBackgroundWithBlock { (objects:[AnyObject]!, error:NSError!) -> Void in
+            if objects.count == 1 {
+                var parseUser = objects[0] as ParseUser
+                parseUser.isPublic = true
+                parseUser.longitude = User.currentUser?.location?.longitude
+                parseUser.latitude = User.currentUser?.location?.latitude
+                
+                parseUser.saveEventually()
+                println("saved")
+                
+                
+            } else {
+                
+            }
+        }
+        
+        
     }
 
     @IBAction func onWhatsThis(sender: AnyObject) {
