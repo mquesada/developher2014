@@ -10,9 +10,8 @@ class ParseUser:  PFUser,PFSubclassing {
         set {setObject(newValue, forKey: "isPublic")}
     }
     var name :String? {
-        get {return objectForKey("Name") as String?}
-        set {setObject(newValue, forKey: "Name")}
-    }
+        get {return self.firstName! + " " +  self.lastName!}
+     }
     var firstName :String? {
         get {return objectForKey("FirstName") as String?}
         set {setObject(newValue, forKey: "FirstName")}
@@ -27,8 +26,8 @@ class ParseUser:  PFUser,PFSubclassing {
     }
     
     var profileImageUrl :String? {
-        get {return objectForKey("profileImageURL") as String?}
-        set {setObject(newValue, forKey: "profileImageURL")}
+        get {return objectForKey("ProfileImageURL") as String?}
+        set {setObject(newValue, forKey: "ProfileImageURL")}
     }
     var latitude :Double? {
         get {return objectForKey("Latitude") as Double?}

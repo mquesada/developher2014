@@ -17,7 +17,7 @@ class User {
     var id: String!
     var firstName: String!
     var lastName: String!
-    var profileImageUrl: NSURL!
+    var profileImageUrl: String!
     var headline: String!
     var email: String!
     var industry: String!
@@ -30,7 +30,9 @@ class User {
         self.firstName = data["firstName"] as String
         self.lastName = data["lastName"] as String
         self.headline = data["headline"] as String
-        self.profileImageUrl = NSURL(string: data["pictureUrl"] as String)
+//        self.profileImageUrl = NSURL(string: data["pictureUrl"] as String)
+        self.profileImageUrl = data ["pictureUrl"] as String
+        
         self.email = data["emailAddress"] as String
         self.industry = data["industry"] as String
      }
