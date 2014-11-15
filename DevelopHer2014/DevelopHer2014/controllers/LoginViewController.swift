@@ -38,6 +38,7 @@ class LoginViewController: UIViewController {
     @IBAction func connectToLinkedIn(sender: AnyObject) {
         User.loginWithCompletion { () -> Void in
             println("User logged in")
+            self.performSegueWithIdentifier("LoginSegue", sender: self)
         }
     }
     

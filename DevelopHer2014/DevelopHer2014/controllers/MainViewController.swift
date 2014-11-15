@@ -13,6 +13,10 @@ class MainViewController: UIViewController {
     @IBOutlet weak var descriptionHUD: UIView!
     @IBOutlet weak var whosHereButton: UIButton!
     var titleImageView = UIImageView(image: UIImage(named: "home.png"))
+    //Check if the user is currently going public
+    var goPublic: Bool = false
+
+    var navigationRightButton = UIBarButtonItem(image: UIImage(named: "peopleList.png"), style: .Done, target: nil, action: "goToPeopleList")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,9 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.navigationItem.titleView = titleImageView
+        if(!goPublic){
+            self.updateRightBarButton(false)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,13 +38,30 @@ class MainViewController: UIViewController {
             self.descriptionHUD.alpha = alpha
             
             }, completion:{ finished in
-                println("change alpha")
+                //println("change alpha")
             
             })
     }
     
+    func updateRightBarButton(show: Bool){
+        if(show){
+            self.navigationItem.setRightBarButtonItem(self.navigationRightButton, animated: false)
+            
+        }else{
+            self.navigationItem.setRightBarButtonItem(nil, animated: false)
+        }
+    }
+    
+    func goToPeopleList(){
+        println("goToPeopleList")
+        self.performSegueWithIdentifier("ShowPeopleListSegue", sender: self)
+        
+    }
+    
     @IBAction func onWhosHere(sender: AnyObject) {
         println("Click on Who's here button")
+        self.goPublic = true
+        self.updateRightBarButton(true)
     }
 
     @IBAction func onWhatsThis(sender: AnyObject) {

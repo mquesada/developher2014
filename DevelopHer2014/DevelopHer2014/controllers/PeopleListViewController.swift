@@ -20,6 +20,8 @@ class PeopleListViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 96
+        var peopleTitleImageView = UIImageView(image: UIImage(named: "peopleList.png"))
+        self.navigationItem.titleView = peopleTitleImageView
     }
 
     override func didReceiveMemoryWarning() {

@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LocationManagerDelegate {
     
     var window: UIWindow?
     var locationManager = LocationManager.sharedInstance
+    var storyboard = UIStoryboard (name: "Main", bundle: nil)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -23,6 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LocationManagerDelegate {
         Parse.setApplicationId("6RJu3SH5YkYeAmkRuBSFYlVQDwsh9ssdIWmoHJUZ", clientKey: "OXrovYrxJfmQpEP4cWjgNllk3rmc6PqCjqKDAvCq")
 
         customizeUI()
+        if PFUser.currentUser() != nil   {
+            //go to logged in view
+            println ("current is logged in as \(PFUser.currentUser().username!)")
+            var nvc = storyboard.instantiateViewControllerWithIdentifier("MainNavigationController") as UINavigationController
+            window?.rootViewController = nvc
+        } else {
+            println("no current user")
+        }
+
         return true
     }
     
@@ -35,11 +45,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LocationManagerDelegate {
         UINavigationBar.appearance().titleTextAttributes = titleColorDictionary
         //Navigation item font R:253 G:193 B:47
         UINavigationBar.appearance().tintColor = UIColor(red: 253/255, green: 193/255, blue: 47/255, alpha: 1)
-        //Navigation bar R:153 G:134 B:117
-        UINavigationBar.appearance().barTintColor = UIColor(red: 153/255, green: 134/255, blue: 117/255, alpha: 1)
+        //Navigation bar R:136 G:120 B:105
+        UINavigationBar.appearance().barTintColor = UIColor(red: 120/255, green: 106/255, blue: 93/255, alpha: 1)
         //Regular buttons background R:122 G:192 B:201
         UIButton.appearance().tintColor = UIColor.whiteColor()
         UIButton.appearance().backgroundColor = UIColor(red: 122/255, green: 192/255, blue: 168/201, alpha: 1)
+        UILabel.appearance().textColor = UIColor(red: 136/255, green: 120/255, blue: 105/255, alpha: 1)
         
     }
 
