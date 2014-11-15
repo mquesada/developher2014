@@ -10,11 +10,13 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var descriptionHUD: UIView!
     @IBOutlet weak var whosHereButton: UIButton!
     var titleImageView = UIImageView(image: UIImage(named: "home.png"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.descriptionHUD.alpha = 0
 
         // Do any additional setup after loading the view.
         self.navigationItem.titleView = titleImageView
@@ -24,19 +26,27 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func animateHUD(#alpha: CGFloat){
+        UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .CurveEaseInOut, animations: {
+            self.descriptionHUD.alpha = alpha
+            
+            }, completion:{ finished in
+                println("change alpha")
+            
+            })
+    }
     
     @IBAction func onWhosHere(sender: AnyObject) {
         println("Click on Who's here button")
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func onWhatsThis(sender: AnyObject) {
+        println("Show what's this description")
+        animateHUD(alpha: 0.8)
     }
-    */
+
+    @IBAction func dismissHUD(sender: AnyObject) {
+        animateHUD(alpha: 0)
+    }
 
 }

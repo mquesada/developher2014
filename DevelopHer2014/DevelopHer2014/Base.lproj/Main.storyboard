@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="k6b-vB-ccH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -59,32 +60,6 @@
             </objects>
             <point key="canvasLocation" x="2671" y="348"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hi1-DM-Dfk">
-            <objects>
-                <viewController storyboardIdentifier="WhosHereDescription" id="pmy-6o-0En" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lkq-zI-yMt"/>
-                        <viewControllerLayoutGuide type="bottom" id="6zp-Dm-bbo"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="iRf-dQ-u0u">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The page where we describe what &quot;Who's here&quot; means" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbp-AS-jnS">
-                                <rect key="frame" x="88" y="115" width="425" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PFD-6n-cxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1953" y="-319"/>
-        </scene>
         <!--Main View Controller-->
         <scene sceneID="rUR-2m-Py2">
             <objects>
@@ -101,6 +76,7 @@
                                 <rect key="frame" x="200" y="164" width="200" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="2NS-i4-t3i"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="91C-78-Wsm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Who's here?">
@@ -116,20 +92,64 @@
                                 <state key="normal" image="whatsThis.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onWhatsThis:" destination="NvN-h0-37j" eventType="touchUpInside" id="Zz6-4h-Ak4"/>
+                                </connections>
                             </button>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-aK-RXQ">
+                                <rect key="frame" x="16" y="84" width="568" height="496"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SN5-si-sL0">
+                                        <rect key="frame" x="21" y="30" width="526" height="220"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="sZR-SB-g29"/>
+                                        </constraints>
+                                        <string key="text">By clicking "Who's here?" you will be broadcasting your presence publicly to others who are also public and around. You won't be able to see others if you do not go public</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8e-XM-CXf">
+                                        <rect key="frame" x="209" y="396" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="KTf-Ea-FYZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Got it">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissHUD:" destination="NvN-h0-37j" eventType="touchUpInside" id="6yV-EO-mPJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="SN5-si-sL0" firstAttribute="top" secondItem="Rdt-aK-RXQ" secondAttribute="top" constant="30" id="N5y-t7-AlN"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SN5-si-sL0" secondAttribute="trailing" constant="19" id="Qip-yB-qeM"/>
+                                    <constraint firstItem="SN5-si-sL0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rdt-aK-RXQ" secondAttribute="leading" constant="21" id="gB5-Oe-kMH"/>
+                                    <constraint firstAttribute="bottom" secondItem="x8e-XM-CXf" secondAttribute="bottom" constant="70" id="nGL-Nf-OHb"/>
+                                    <constraint firstAttribute="centerX" secondItem="x8e-XM-CXf" secondAttribute="centerX" id="pEg-7P-aiK"/>
+                                    <constraint firstAttribute="centerX" secondItem="SN5-si-sL0" secondAttribute="centerX" id="wcx-5w-4sF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="lHf-g7-Cjg" secondAttribute="centerX" id="DsU-2c-cFb"/>
-                            <constraint firstAttribute="centerX" secondItem="iad-Ir-P6Y" secondAttribute="centerX" id="QG1-5n-hWf"/>
-                            <constraint firstItem="lHf-g7-Cjg" firstAttribute="top" secondItem="v67-7Y-6F2" secondAttribute="bottom" constant="100" id="fHc-ch-KiW"/>
-                            <constraint firstItem="iad-Ir-P6Y" firstAttribute="top" secondItem="lHf-g7-Cjg" secondAttribute="bottom" constant="8" id="fVk-Ea-V2c"/>
+                            <constraint firstItem="Rdt-aK-RXQ" firstAttribute="top" secondItem="v67-7Y-6F2" secondAttribute="bottom" constant="20" id="67v-nf-de1"/>
+                            <constraint firstItem="Rdt-aK-RXQ" firstAttribute="trailing" secondItem="bh0-WO-X21" secondAttribute="trailingMargin" id="6lm-yE-cNx"/>
+                            <constraint firstAttribute="centerX" secondItem="lHf-g7-Cjg" secondAttribute="centerX" id="NBa-vb-qqv"/>
+                            <constraint firstItem="iad-Ir-P6Y" firstAttribute="top" secondItem="lHf-g7-Cjg" secondAttribute="bottom" constant="8" id="Pfk-pr-yKl"/>
+                            <constraint firstItem="Rdt-aK-RXQ" firstAttribute="leading" secondItem="bh0-WO-X21" secondAttribute="leadingMargin" id="bMQ-al-2I6"/>
+                            <constraint firstAttribute="centerX" secondItem="iad-Ir-P6Y" secondAttribute="centerX" id="kfi-KY-NqE"/>
+                            <constraint firstItem="lHf-g7-Cjg" firstAttribute="top" secondItem="v67-7Y-6F2" secondAttribute="bottom" constant="100" id="nH4-hW-9a4"/>
+                            <constraint firstItem="OZ5-ly-Ty0" firstAttribute="top" secondItem="Rdt-aK-RXQ" secondAttribute="bottom" constant="20" id="w3X-yO-l5u"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zh2-6J-JPu">
                         <barButtonItem key="leftBarButtonItem" image="star.png" id="YdN-8j-wAL"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionHUD" destination="Rdt-aK-RXQ" id="ab5-a5-KZd"/>
                         <outlet property="whosHereButton" destination="lHf-g7-Cjg" id="XyP-Pk-mWn"/>
                     </connections>
                 </viewController>
