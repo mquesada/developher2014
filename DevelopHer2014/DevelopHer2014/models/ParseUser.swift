@@ -5,7 +5,10 @@ class ParseUser:  PFUser,PFSubclassing {
     override class func load() {
         self.registerSubclass()
     }
-    
+    var isPublic :Bool? {
+        get {return objectForKey("isPublic") as Bool?}
+        set {setObject(newValue, forKey: "isPublic")}
+    }
     var name :String? {
         get {return objectForKey("Name") as String?}
         set {setObject(newValue, forKey: "Name")}
