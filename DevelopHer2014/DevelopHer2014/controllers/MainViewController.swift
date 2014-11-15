@@ -12,6 +12,8 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var descriptionHUD: UIView!
     @IBOutlet weak var whosHereButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var starButton: UIButton!
     var titleImageView = UIImageView(image: UIImage(named: "home.png"))
     //Check if the user is currently going public
     var goPublic: Bool = false
@@ -24,6 +26,8 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.navigationItem.titleView = titleImageView
+        self.logoutButton.backgroundColor = UIColor.clearColor()
+        self.starButton.backgroundColor = UIColor.clearColor()
         if(!goPublic){
             self.updateRightBarButton(false)
         }
@@ -73,4 +77,7 @@ class MainViewController: UIViewController {
         animateHUD(alpha: 0)
     }
 
+    @IBAction func onLogout(sender: UIButton) {
+        User.currentUser?.logout()
+    }
 }

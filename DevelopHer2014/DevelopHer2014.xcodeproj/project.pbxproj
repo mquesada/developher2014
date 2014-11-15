@@ -29,6 +29,9 @@
 		D086B4571A1767F80058D031 /* whatsThis.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4561A1767F80058D031 /* whatsThis.png */; };
 		D086B4591A1777BB0058D031 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086B4581A1777BB0058D031 /* PeopleListViewController.swift */; };
 		D086B45B1A17782C0058D031 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086B45A1A17782C0058D031 /* PeopleTableViewCell.swift */; };
+		D086B45D1A178D0F0058D031 /* logoutButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B45C1A178D0F0058D031 /* logoutButton.png */; };
+		D086B4631A1790670058D031 /* PeopleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086B4621A1790670058D031 /* PeopleDetailViewController.swift */; };
+		D086B4651A17911B0058D031 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4641A17911B0058D031 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		D086B4561A1767F80058D031 /* whatsThis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whatsThis.png; path = Images.xcassets/whatsThis.png; sourceTree = "<group>"; };
 		D086B4581A1777BB0058D031 /* PeopleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListViewController.swift; path = controllers/PeopleListViewController.swift; sourceTree = "<group>"; };
 		D086B45A1A17782C0058D031 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		D086B45C1A178D0F0058D031 /* logoutButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoutButton.png; path = Images.xcassets/logoutButton.png; sourceTree = "<group>"; };
+		D086B4621A1790670058D031 /* PeopleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleDetailViewController.swift; path = controllers/PeopleDetailViewController.swift; sourceTree = "<group>"; };
+		D086B4641A17911B0058D031 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Images.xcassets/logo.png; sourceTree = "<group>"; };
 		DAE3905911AB1FCF511EE800 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +177,7 @@
 				5F3390A31A1723E500A89E3A /* LoginViewController.swift */,
 				D086B44D1A17651E0058D031 /* MainViewController.swift */,
 				D086B4581A1777BB0058D031 /* PeopleListViewController.swift */,
+				D086B4621A1790670058D031 /* PeopleDetailViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -207,6 +214,8 @@
 		D086B44F1A17658E0058D031 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D086B4641A17911B0058D031 /* logo.png */,
+				D086B45C1A178D0F0058D031 /* logoutButton.png */,
 				D086B4561A1767F80058D031 /* whatsThis.png */,
 				D086B4501A17659F0058D031 /* home.png */,
 				D086B4511A17659F0058D031 /* peopleList.png */,
@@ -298,6 +307,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D086B4571A1767F80058D031 /* whatsThis.png in Resources */,
+				D086B45D1A178D0F0058D031 /* logoutButton.png in Resources */,
+				D086B4651A17911B0058D031 /* logo.png in Resources */,
 				D086B4531A17659F0058D031 /* home.png in Resources */,
 				5F33907C1A171A8500A89E3A /* Main.storyboard in Resources */,
 				D086B4541A17659F0058D031 /* peopleList.png in Resources */,
@@ -358,6 +369,7 @@
 				D086B4591A1777BB0058D031 /* PeopleListViewController.swift in Sources */,
 				D086B44E1A17651E0058D031 /* MainViewController.swift in Sources */,
 				5F3390A81A17241200A89E3A /* LinkedInClient.swift in Sources */,
+				D086B4631A1790670058D031 /* PeopleDetailViewController.swift in Sources */,
 				8F3798561A1757440027FB9F /* ParseUser.swift in Sources */,
 				5F3390A41A1723E500A89E3A /* LoginViewController.swift in Sources */,
 				5F3390AD1A172F8000A89E3A /* LocationManager.swift in Sources */,
