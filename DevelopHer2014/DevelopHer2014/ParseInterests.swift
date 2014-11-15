@@ -15,10 +15,10 @@ class ParseInterest: PFObject,PFSubclassing {
     }
     
     class  func  parseClassName() -> String! {
-        return "InterestTypes"
+        return "InterestType"
     }
     override class func query() -> PFQuery! {
-        return PFQuery(className: "InterestTypes")
+        return PFQuery(className: "InterestType")
     }
     
     

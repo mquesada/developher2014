@@ -18,10 +18,7 @@ class ParseUser:  PFUser,PFSubclassing {
         get {return objectForKey("Name") as String?}
         set {setObject(newValue, forKey: "Name")}
     }
-    var screenName:String? {
-        get {return objectForKey("screenName") as String?}
-        set {setObject(newValue, forKey: "screenName")}
-    }
+    
     
     var interests : [ParseInterest] {
         get {return objectForKey("InterestType") as [ParseInterest]}
