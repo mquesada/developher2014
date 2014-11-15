@@ -22,6 +22,9 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "userDidLogout", name: userDidLogoutNotification, object: nil)
+        
         self.descriptionHUD.alpha = 0
 
         // Do any additional setup after loading the view.
@@ -80,4 +83,17 @@ class MainViewController: UIViewController {
     @IBAction func onLogout(sender: UIButton) {
         User.currentUser?.logout()
     }
+    
+    func userDidLogout() {
+        NSUserDefaults.standardUserDefaults().setObject(nil, forKey: "linkedin_token")
+        NSUserDefaults.standardUserDefaults().setObject(nil, forKey: "linkedin_expiration")
+        NSUserDefaults.standardUserDefaults().setObject(nil, forKey: "linkedin_token_created_at")
+        
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+            
+            
+        })
+    }
+
+    
 }

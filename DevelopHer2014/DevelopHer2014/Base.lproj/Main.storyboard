@@ -67,19 +67,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uj-jg-0cJ">
-                                                    <rect key="frame" x="124" y="41" width="468" height="20.5"/>
+                                                    <rect key="frame" x="124" y="41" width="468" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7u7-Rg-CPT">
-                                                    <rect key="frame" x="124" y="69" width="66.5" height="20.5"/>
+                                                    <rect key="frame" x="124" y="70" width="67" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Industry" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvu-Ep-gwd">
-                                                    <rect key="frame" x="198" y="69" width="62" height="21"/>
+                                                    <rect key="frame" x="199" y="70" width="62" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -373,7 +373,7 @@
         <!--Login View Controller-->
         <scene sceneID="vCt-bd-ofO">
             <objects>
-                <viewController id="Ssn-af-bdf" customClass="LoginViewController" customModule="DevelopHer2014" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Ssn-af-bdf" customClass="LoginViewController" customModule="DevelopHer2014" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PZQ-0q-2SP"/>
                         <viewControllerLayoutGuide type="bottom" id="7pP-AW-UrR"/>

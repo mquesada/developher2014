@@ -26,9 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         Parse.setApplicationId("6RJu3SH5YkYeAmkRuBSFYlVQDwsh9ssdIWmoHJUZ", clientKey: "OXrovYrxJfmQpEP4cWjgNllk3rmc6PqCjqKDAvCq")
 
         customizeUI()
-        if PFUser.currentUser() != nil   {
+        
+        var linkedInClient = LinkedInClient.sharedInstance
+        if (linkedInClient.client.validToken() && User.currentUser != nil)   {
             //go to logged in view
-            println ("current is logged in as \(PFUser.currentUser().username!)")
+            println ("current is logged in as \(User.currentUser?.email!)")
             var nvc = storyboard.instantiateViewControllerWithIdentifier("MainNavigationController") as UINavigationController
             window?.rootViewController = nvc
         } else {
@@ -79,14 +81,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        self.locationManager.stopUpdatingLocation()
+        
         var location = manager.location
         println("got location")
         
         var userLocation = UserLocation.sharedInstance
         userLocation.latitude = location.coordinate.latitude
-        userLocation.longitude = location.coordinate.longitude
-                
-        self.locationManager.stopUpdatingLocation()
+        userLocation.longitude = location.coordinate.longitude                    
         
         var delay = dispatch_time(DISPATCH_TIME_NOW, Int64(600 * Double(NSEC_PER_SEC)))
         dispatch_after(delay, dispatch_get_main_queue()) { () -> Void in
@@ -98,6 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         println("Error while updating location " + error.localizedDescription)
     }
+        
 
 }
 

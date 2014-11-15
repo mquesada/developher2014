@@ -67,10 +67,8 @@ class User {
     
     func logout() {
         User.currentUser = nil
-        
-        // TODO: Review how to do log out
-//        LinkedInClient.sharedInstance.client.requestSerializer.removeAccessToken()
-        NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: userDidLogoutNotification, object: nil))
+
+        NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: userDidLogoutNotification, object: nil))        
     }
     
     class func loginWithCompletion(completion: () -> Void) {
