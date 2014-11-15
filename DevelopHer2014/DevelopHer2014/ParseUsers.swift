@@ -30,8 +30,16 @@ class ParseUser:  PFUser,PFSubclassing {
         get {return objectForKey("HeadLine") as String?}
         set {setObject(newValue, forKey: "HeadLine")}
     }
-    
-    
+
+    var profileImageUrl :String? {
+        get {return objectForKey("profileImageURL") as String?}
+        set {setObject(newValue, forKey: "profileImageURL")}
+    }
+
+    var Indurstry :String? {
+        get {return objectForKey("Indurstry") as String?}
+        set {setObject(newValue, forKey: "Indurstry")}
+    }
     var interests : [ParseInterest] {
         get {return objectForKey("InterestType") as [ParseInterest]}
         set {setObject(newValue, forKey: "InterestType")}
