@@ -22,6 +22,10 @@
 		8F3798541A1757440027FB9F /* ParseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3798511A1757440027FB9F /* ParseCategory.swift */; };
 		8F3798551A1757440027FB9F /* ParseInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3798521A1757440027FB9F /* ParseInterest.swift */; };
 		8F3798561A1757440027FB9F /* ParseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3798531A1757440027FB9F /* ParseUser.swift */; };
+		D086B44E1A17651E0058D031 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086B44D1A17651E0058D031 /* MainViewController.swift */; };
+		D086B4531A17659F0058D031 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4501A17659F0058D031 /* home.png */; };
+		D086B4541A17659F0058D031 /* peopleList.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4511A17659F0058D031 /* peopleList.png */; };
+		D086B4551A17659F0058D031 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D086B4521A17659F0058D031 /* star.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		8F3798521A1757440027FB9F /* ParseInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseInterest.swift; path = models/ParseInterest.swift; sourceTree = "<group>"; };
 		8F3798531A1757440027FB9F /* ParseUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseUser.swift; path = models/ParseUser.swift; sourceTree = "<group>"; };
 		A5CBC9659EE139F7A139A9A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D086B44D1A17651E0058D031 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = controllers/MainViewController.swift; sourceTree = "<group>"; };
+		D086B4501A17659F0058D031 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Images.xcassets/home.png; sourceTree = "<group>"; };
+		D086B4511A17659F0058D031 /* peopleList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = peopleList.png; path = Images.xcassets/peopleList.png; sourceTree = "<group>"; };
+		D086B4521A17659F0058D031 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Images.xcassets/star.png; sourceTree = "<group>"; };
 		DAE3905911AB1FCF511EE800 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +118,7 @@
 		5F3390731A171A8500A89E3A /* DevelopHer2014 */ = {
 			isa = PBXGroup;
 			children = (
+				D086B44F1A17658E0058D031 /* images */,
 				5F3390AB1A17259B00A89E3A /* models */,
 				5F3390A61A17240000A89E3A /* api */,
 				5F3390A51A1723F100A89E3A /* controllers */,
@@ -153,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				5F3390A31A1723E500A89E3A /* LoginViewController.swift */,
+				D086B44D1A17651E0058D031 /* MainViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -184,6 +194,16 @@
 				1F6E4BCDA3E2CF93E7975371 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D086B44F1A17658E0058D031 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D086B4501A17659F0058D031 /* home.png */,
+				D086B4511A17659F0058D031 /* peopleList.png */,
+				D086B4521A17659F0058D031 /* star.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +288,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D086B4531A17659F0058D031 /* home.png in Resources */,
 				5F33907C1A171A8500A89E3A /* Main.storyboard in Resources */,
+				D086B4541A17659F0058D031 /* peopleList.png in Resources */,
 				5F3390811A171A8500A89E3A /* LaunchScreen.xib in Resources */,
 				5F33907E1A171A8500A89E3A /* Images.xcassets in Resources */,
+				D086B4551A17659F0058D031 /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F3798541A1757440027FB9F /* ParseCategory.swift in Sources */,
+				D086B44E1A17651E0058D031 /* MainViewController.swift in Sources */,
 				5F3390A81A17241200A89E3A /* LinkedInClient.swift in Sources */,
 				8F3798561A1757440027FB9F /* ParseUser.swift in Sources */,
 				5F3390A41A1723E500A89E3A /* LoginViewController.swift in Sources */,
