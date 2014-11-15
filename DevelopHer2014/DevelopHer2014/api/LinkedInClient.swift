@@ -75,7 +75,11 @@ class LinkedInClient {
                 println("User Profile retrieved from LinkedIn")
                 println(result)
                 User.currentUser = User(data: result as NSDictionary)
-                self.parseUser?.name = User.currentUser?.firstName
+                self.parseUser?.firstName = User.currentUser?.firstName
+                self.parseUser?.lastName = User.currentUser?.lastName
+                self.parseUser?.email = User.currentUser?.email
+                self.parseUser?.headline = User.currentUser?.headline
+                
                 
                 self.parseUser?.signUpInBackgroundWithBlock({ (successed:Bool, error:NSError!) -> Void in
                     
