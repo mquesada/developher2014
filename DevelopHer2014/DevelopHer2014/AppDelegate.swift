@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LocationManagerDelegate {
     func customizeUI(){
         
         //Navigation title font R:264 G:142 B:86
-        let titleColorDictionary: NSDictionary = [NSForegroundColorAttributeName:UIColor(red: 264/255, green: 142/255, blue: 86/255, alpha: 1)]
+        let titleColorDictionary: NSDictionary = [NSForegroundColorAttributeName:UIColor(red: 246/255, green: 142/255, blue: 86/255, alpha: 1)]
         UINavigationBar.appearance().titleTextAttributes = titleColorDictionary
         //Navigation item font R:253 G:193 B:47
         UINavigationBar.appearance().tintColor = UIColor(red: 253/255, green: 193/255, blue: 47/255, alpha: 1)
