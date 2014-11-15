@@ -22,6 +22,7 @@
 		8F3EF68E1A174F4A00F6F621 /* ParseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF68D1A174F4A00F6F621 /* ParseUser.swift */; };
 		8F3EF6901A174F6D00F6F621 /* ParseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF68F1A174F6D00F6F621 /* ParseCategory.swift */; };
 		8F3EF6921A174F9300F6F621 /* ParseInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF6911A174F9300F6F621 /* ParseInterest.swift */; };
+		8F3EF6941A1750F700F6F621 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EF6931A1750F700F6F621 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8F3EF68D1A174F4A00F6F621 /* ParseUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseUser.swift; sourceTree = "<group>"; };
 		8F3EF68F1A174F6D00F6F621 /* ParseCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseCategory.swift; sourceTree = "<group>"; };
 		8F3EF6911A174F9300F6F621 /* ParseInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseInterest.swift; sourceTree = "<group>"; };
+		8F3EF6931A1750F700F6F621 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		A5CBC9659EE139F7A139A9A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DAE3905911AB1FCF511EE800 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +176,7 @@
 				8F3EF6911A174F9300F6F621 /* ParseInterest.swift */,
 				8F3EF68D1A174F4A00F6F621 /* ParseUser.swift */,
 				8F3EF68F1A174F6D00F6F621 /* ParseCategory.swift */,
+				8F3EF6931A1750F700F6F621 /* test.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				8F3EF6921A174F9300F6F621 /* ParseInterest.swift in Sources */,
 				5F3390AF1A172FF500A89E3A /* UserLocation.swift in Sources */,
 				5F3390771A171A8500A89E3A /* AppDelegate.swift in Sources */,
+				8F3EF6941A1750F700F6F621 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
