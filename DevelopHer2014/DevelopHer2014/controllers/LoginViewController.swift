@@ -22,12 +22,19 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onShowCategories(sender: AnyObject) {
+        
+    
+    }
     @IBAction func onLogout(sender: UIButton) {
        
         User.currentUser?.logout()
-        println("\n[ ]>>>>>> \(__FILE__.pathComponents.last!) >> \(__FUNCTION__) < \(__LINE__) >")
-    }
+     }
 
+    @IBAction func onAddInterest(sender: AnyObject) {
+    
+    }
+    
     @IBAction func connectToLinkedIn(sender: AnyObject) {
         User.loginWithCompletion { () -> Void in
             println("User logged in")

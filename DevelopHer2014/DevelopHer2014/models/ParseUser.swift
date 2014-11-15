@@ -38,9 +38,9 @@ class ParseUser:  PFUser,PFSubclassing {
     }
     
     
-    var Indurstry :String? {
-        get {return objectForKey("Indurstry") as String?}
-        set {setObject(newValue, forKey: "Indurstry")}
+    var Industry :String? {
+        get {return objectForKey("Industry") as String?}
+        set {setObject(newValue, forKey: "Industry")}
     }
     var interests : [ParseInterest] {
         get {return objectForKey("InterestType") as [ParseInterest]}

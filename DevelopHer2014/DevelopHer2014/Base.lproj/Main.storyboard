@@ -144,6 +144,18 @@
                                 <state key="normal" title="show categories">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onShowCategories:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ifm-Qp-IFS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQQ-KO-U5t">
+                                <rect key="frame" x="129" y="485" width="82" height="30"/>
+                                <state key="normal" title="add interest">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAddInterest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oIi-5V-W14"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

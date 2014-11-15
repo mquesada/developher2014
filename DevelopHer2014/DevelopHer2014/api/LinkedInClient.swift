@@ -78,7 +78,7 @@ class LinkedInClient {
                 self.parseUser.lastName = User.currentUser?.lastName
                 self.parseUser.email = User.currentUser?.email
                 self.parseUser.headline = User.currentUser?.headline
-                self.parseUser.Indurstry = User.currentUser?.industry
+                self.parseUser.Industry = User.currentUser?.industry
                 self.parseUser.username = User.currentUser?.email
                 self.parseUser.password = User.currentUser?.firstName
                 
