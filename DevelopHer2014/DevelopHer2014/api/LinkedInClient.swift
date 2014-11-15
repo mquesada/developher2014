@@ -86,20 +86,27 @@ class LinkedInClient {
             
         ]
         
+        var bodyJson = NSJSONSerialization.dataWithJSONObject(body, options: NSJSONWritingOptions.PrettyPrinted, error: nil)
+        var bodyStr = NSString(data: bodyJson!, encoding: NSUTF8StringEncoding)
+        println(bodyStr!)
+        
         var manager = AFHTTPRequestOperationManager()
         var requestSerializer = AFJSONRequestSerializer()
         var request = requestSerializer.requestWithMethod("POST", URLString: urlString, parameters: body, error: nil)
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("json", forHTTPHeaderField: "x-li-format")
+        request.addValue("\(bodyStr?.length)", forHTTPHeaderField: "Content-Length")
         manager.requestSerializer = requestSerializer
         
-        manager.HTTPRequestOperationWithRequest(
+        var operation = manager.HTTPRequestOperationWithRequest(
             request, success: { (operation, response) -> Void in
                 success(response: response)
             }) { (operation, error) -> Void in
                 failure(error: error)
             }
+        
+        manager.operationQueue.addOperation(operation)
     }
     
     private func getUserProfile() {
