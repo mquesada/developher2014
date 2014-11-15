@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ssn-af-bdf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ssn-af-bdf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,14 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhM-b7-gUu">
-                                <rect key="frame" x="24" y="85" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="FYw-n3-Foh"/>
-                                    <constraint firstAttribute="width" constant="100" id="uvA-wo-7Y6"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LinkedIn Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0P-7P-QUB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhM-b7-gUu"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LinkedIn Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0P-7P-QUB">
                                 <rect key="frame" x="132" y="92" width="452" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,7 +36,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meH-BH-g2X">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meH-BH-g2X">
                                 <rect key="frame" x="0.0" y="530" width="600" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sR5-wr-pna">
@@ -67,24 +61,19 @@
                                     <constraint firstAttribute="bottom" secondItem="sR5-wr-pna" secondAttribute="bottom" constant="20" id="wEW-Kp-Rl2"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fakeDetail.png" translatesAutoresizingMaskIntoConstraints="NO" id="5a4-ge-3e0">
-                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fakeDetail.png" translatesAutoresizingMaskIntoConstraints="NO" id="5a4-ge-3e0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="664"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="meH-BH-g2X" secondAttribute="bottom" id="12a-cA-mUi"/>
-                            <constraint firstItem="s0P-7P-QUB" firstAttribute="top" secondItem="MjX-dQ-kSE" secondAttribute="bottom" constant="28" id="8Bg-Gi-CJW"/>
-                            <constraint firstItem="s0P-7P-QUB" firstAttribute="leading" secondItem="fhM-b7-gUu" secondAttribute="trailing" constant="8" id="8IS-dV-gbY"/>
                             <constraint firstAttribute="trailing" secondItem="meH-BH-g2X" secondAttribute="trailing" id="9ri-3h-0so"/>
                             <constraint firstItem="meH-BH-g2X" firstAttribute="leading" secondItem="KB2-tr-Ht4" secondAttribute="leading" id="CPy-9e-2R1"/>
                             <constraint firstAttribute="bottom" secondItem="5a4-ge-3e0" secondAttribute="bottom" constant="-64" id="MQE-aw-TK2"/>
-                            <constraint firstItem="fhM-b7-gUu" firstAttribute="top" secondItem="MjX-dQ-kSE" secondAttribute="bottom" constant="21" id="Phw-Oc-wEh"/>
-                            <constraint firstItem="5a4-ge-3e0" firstAttribute="top" secondItem="KB2-tr-Ht4" secondAttribute="top" constant="64" id="Qd6-9Z-7ry"/>
+                            <constraint firstItem="5a4-ge-3e0" firstAttribute="top" secondItem="KB2-tr-Ht4" secondAttribute="top" id="Qd6-9Z-7ry"/>
                             <constraint firstAttribute="trailing" secondItem="5a4-ge-3e0" secondAttribute="trailing" id="XDO-5k-frm"/>
                             <constraint firstItem="5a4-ge-3e0" firstAttribute="leading" secondItem="KB2-tr-Ht4" secondAttribute="leading" id="beg-GW-GBZ"/>
-                            <constraint firstItem="s0P-7P-QUB" firstAttribute="trailing" secondItem="KB2-tr-Ht4" secondAttribute="trailingMargin" id="enz-6Y-hjr"/>
-                            <constraint firstItem="fhM-b7-gUu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KB2-tr-Ht4" secondAttribute="leadingMargin" constant="8" id="f5k-yP-3G4"/>
                         </constraints>
                     </view>
                     <connections>
