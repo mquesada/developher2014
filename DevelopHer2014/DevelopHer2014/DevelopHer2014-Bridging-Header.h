@@ -6,3 +6,5 @@
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
 #import "PFObject+Subclass.h"
+#import "LIALinkedInHttpClient.h"
+#import "LIALinkedInApplication.h"
