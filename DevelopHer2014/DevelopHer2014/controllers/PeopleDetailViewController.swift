@@ -9,6 +9,8 @@
 import UIKit
 
 class PeopleDetailViewController: UIViewController {
+    
+    var user: User!
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -16,8 +18,15 @@ class PeopleDetailViewController: UIViewController {
     @IBOutlet weak var industryLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (user == nil) {
+            user = User.currentUser
+        }
 
-        // Do any additional setup after loading the view.
+        self.nameLabel.text = user.firstName + " " + user.lastName
+        self.headlineLabel.text = user.headline
+        self.industryLabel.text = user.industry
+        self.profileImageView.setImageWithURL(user.profileImageUrl)        
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +35,14 @@ class PeopleDetailViewController: UIViewController {
     }
     
     @IBAction func onConnect(sender: AnyObject) {
+        
+        var alert = UIAlertController(title: "Invitation to Connect", message: "Please enter your message", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Connect", style: UIAlertActionStyle.Default, handler: nil))
+        alert.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
+            textField.placeholder = "Please add me to your professional network."
+            textField.secureTextEntry = true
+        })
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 
     /*
