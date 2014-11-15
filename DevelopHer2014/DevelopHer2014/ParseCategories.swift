@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ParseCategories: PFObject,PFSubclassing {
+class ParseCategory: PFObject,PFSubclassing {
     
     override class func load() {
         self.registerSubclass()
