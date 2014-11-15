@@ -13,9 +13,15 @@ class UserLocation {
     var latitude: Double!
     var longitude: Double!
     
-    init(latitude: Double, longitude: Double) {
-        self.latitude = latitude
-        self.longitude = longitude
+    init() {
+    }
+    
+    class var sharedInstance: UserLocation {
+        struct Static {
+            static let instance = UserLocation()
+            
+        }
+        return Static.instance
     }
    
 }

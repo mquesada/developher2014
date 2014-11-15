@@ -9,16 +9,18 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, LocationManagerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
     
     var window: UIWindow?
-    var locationManager = LocationManager.sharedInstance
+    var locationManager : CLLocationManager!
     var storyboard = UIStoryboard (name: "Main", bundle: nil)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        self.locationManager.autoUpdate = true
+        
+        self.locationManager = CLLocationManager()
         self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.startUpdatingLocation()
         
         Parse.setApplicationId("6RJu3SH5YkYeAmkRuBSFYlVQDwsh9ssdIWmoHJUZ", clientKey: "OXrovYrxJfmQpEP4cWjgNllk3rmc6PqCjqKDAvCq")
@@ -76,16 +78,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LocationManagerDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func locationManagerStatus(status:NSString){
-        println(status)
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var location = manager.location
+        println("got location")
+        
+        var userLocation = UserLocation.sharedInstance
+        userLocation.latitude = location.coordinate.latitude
+        userLocation.longitude = location.coordinate.longitude
+                
+        self.locationManager.stopUpdatingLocation()
+        
+        var delay = dispatch_time(DISPATCH_TIME_NOW, Int64(600 * Double(NSEC_PER_SEC)))
+        dispatch_after(delay, dispatch_get_main_queue()) { () -> Void in
+            self.locationManager.startUpdatingLocation()
+        }
+
     }
     
-    func locationManagerReceivedError(error:NSString){
-        println(error)
-    }
-    
-    func locationFound(latitude:Double, longitude:Double){
-        User.currentUser?.location = UserLocation(latitude: latitude, longitude: longitude)
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println("Error while updating location " + error.localizedDescription)
     }
 
 }

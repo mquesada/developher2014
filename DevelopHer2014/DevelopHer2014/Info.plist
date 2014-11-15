@@ -37,8 +37,8 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>EZNet would like to use your location</string>
+	<string>Please allow SavvyNet to use your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>EZNet would like to use your location</string>
+	<string>Please allow SavvyNet to use your location</string>
 </dict>
 </plist>

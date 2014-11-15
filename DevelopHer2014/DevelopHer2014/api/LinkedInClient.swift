@@ -37,7 +37,7 @@ class LinkedInClient {
     }
         
     func loginWithCompletion(completion: (user: User?, error: NSError?) -> ()) {
-        loginCompletion = completion
+        self.loginCompletion = completion
         
         if (User.currentUser != nil) {
             self.loginCompletion?(user: User.currentUser, error: nil)
@@ -48,7 +48,6 @@ class LinkedInClient {
                         var accessToken = accessTokenData["access_token"] as String
                         println("Access Token " + accessToken)
                         self.getUserProfile()
-                        
                     }, failure: { (error) -> Void in
                         println("Quering accessToken failed")
                         println(error)
@@ -135,14 +134,16 @@ class LinkedInClient {
                 }
                 
                 self.parseUser.signUpInBackgroundWithBlock({ (successed:Bool, error:NSError!) -> Void in
-                    
                     if successed {
                         println("use added successfully")
-                    }else{
+                    } else {
                         println("use added :\(error)")
         
                     }
                 })
+                
+                self.loginCompletion?(user: User.currentUser, error: nil)
+                
             }, failure: { (request, error) -> Void in
                 println("Error retrieving user profile!!")
                 println(error)

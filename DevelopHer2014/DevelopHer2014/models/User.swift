@@ -13,6 +13,7 @@ var userDidLoginNotification = "userDidLoginNotification"
 var userDidLogoutNotification = "userDidLogoutNotification"
 
 class User {
+    
     var id: String!
     var firstName: String!
     var lastName: String!
@@ -21,7 +22,6 @@ class User {
     var email: String!
     var industry: String!
     var data: NSDictionary!
-    var location: UserLocation!
     
     init(data: NSDictionary) {
         self.data = data
@@ -34,6 +34,12 @@ class User {
         self.email = data["emailAddress"] as String
         self.industry = data["industry"] as String
      }
+    
+    var location : UserLocation? {
+        get {
+            return UserLocation.sharedInstance
+        }
+    }
     
     class var currentUser: User? {
         get {
@@ -61,18 +67,21 @@ class User {
     
     func logout() {
         User.currentUser = nil
+        
         // TODO: Review how to do log out
 //        LinkedInClient.sharedInstance.client.requestSerializer.removeAccessToken()
         NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: userDidLogoutNotification, object: nil))
     }
     
     class func loginWithCompletion(completion: () -> Void) {
+        
         LinkedInClient.sharedInstance.loginWithCompletion { (user, error) -> () in
             if (user != nil) {
+                User.currentUser = user
                 NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: userDidLoginNotification, object: nil))
                 completion()
             } else {
-                
+                println(error)
             }
         }
     }
