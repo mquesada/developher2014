@@ -147,54 +147,49 @@
                                                         <constraint firstAttribute="height" constant="100" id="Tpg-OB-X35"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linkedin Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-UX-4w9">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Linkedin Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-UX-4w9">
                                                     <rect key="frame" x="124" y="10" width="468" height="23"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uj-jg-0cJ">
-                                                    <rect key="frame" x="124" y="41" width="468" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" text="Headline" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uj-jg-0cJ">
+                                                    <rect key="frame" x="124" y="41" width="473" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7u7-Rg-CPT">
-                                                    <rect key="frame" x="124" y="70" width="67" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Industry" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvu-Ep-gwd">
-                                                    <rect key="frame" x="199" y="70" width="62" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Industry" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvu-Ep-gwd">
+                                                    <rect key="frame" x="124" y="71" width="468" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="fvu-Ep-gwd" secondAttribute="trailing" id="0Cy-hv-cd2"/>
-                                                <constraint firstItem="7u7-Rg-CPT" firstAttribute="baseline" secondItem="fvu-Ep-gwd" secondAttribute="baseline" id="2Yr-ws-Gj0"/>
+                                                <constraint firstItem="fvu-Ep-gwd" firstAttribute="trailing" secondItem="M9B-cM-Y0w" secondAttribute="trailingMargin" id="0ih-zy-SnC"/>
                                                 <constraint firstItem="hRe-UX-4w9" firstAttribute="leading" secondItem="j6h-gh-7Hy" secondAttribute="trailing" constant="8" symbolic="YES" id="8BS-c2-il8"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="7u7-Rg-CPT" secondAttribute="bottom" constant="9.5" id="8RQ-4Z-J5P"/>
-                                                <constraint firstItem="6uj-jg-0cJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M9B-cM-Y0w" secondAttribute="trailingMargin" id="9Zq-QK-JKf"/>
+                                                <constraint firstItem="6uj-jg-0cJ" firstAttribute="trailing" secondItem="M9B-cM-Y0w" secondAttribute="trailingMargin" constant="5" id="9Zq-QK-JKf"/>
                                                 <constraint firstItem="j6h-gh-7Hy" firstAttribute="leading" secondItem="M9B-cM-Y0w" secondAttribute="leadingMargin" constant="8" id="9tK-Bu-pdt"/>
+                                                <constraint firstItem="fvu-Ep-gwd" firstAttribute="top" secondItem="6uj-jg-0cJ" secondAttribute="bottom" constant="8" id="IwM-Oa-teJ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="j6h-gh-7Hy" secondAttribute="bottom" constant="0.5" id="NRi-RZ-UlI"/>
-                                                <constraint firstItem="fvu-Ep-gwd" firstAttribute="top" secondItem="6uj-jg-0cJ" secondAttribute="bottom" constant="8" symbolic="YES" id="XdJ-Se-D9u"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fvu-Ep-gwd" secondAttribute="bottom" constant="18" id="P5y-mY-Tll"/>
                                                 <constraint firstItem="hRe-UX-4w9" firstAttribute="top" secondItem="M9B-cM-Y0w" secondAttribute="topMargin" constant="2" id="ZXM-ru-gyH"/>
                                                 <constraint firstItem="j6h-gh-7Hy" firstAttribute="top" secondItem="M9B-cM-Y0w" secondAttribute="topMargin" constant="2" id="bOk-l6-gkM"/>
-                                                <constraint firstItem="fvu-Ep-gwd" firstAttribute="leading" secondItem="7u7-Rg-CPT" secondAttribute="trailing" constant="8" symbolic="YES" id="dXs-vC-3Gc"/>
                                                 <constraint firstItem="6uj-jg-0cJ" firstAttribute="leading" secondItem="j6h-gh-7Hy" secondAttribute="trailing" constant="8" symbolic="YES" id="fVs-LH-HHA"/>
-                                                <constraint firstItem="7u7-Rg-CPT" firstAttribute="top" secondItem="6uj-jg-0cJ" secondAttribute="bottom" constant="8" symbolic="YES" id="glN-tz-4qa"/>
+                                                <constraint firstItem="fvu-Ep-gwd" firstAttribute="leading" secondItem="6uj-jg-0cJ" secondAttribute="leading" id="hxz-rR-kOQ"/>
                                                 <constraint firstItem="6uj-jg-0cJ" firstAttribute="top" secondItem="hRe-UX-4w9" secondAttribute="bottom" constant="8" symbolic="YES" id="iDe-ST-zSE"/>
                                                 <constraint firstItem="hRe-UX-4w9" firstAttribute="trailing" secondItem="M9B-cM-Y0w" secondAttribute="trailingMargin" id="nDb-Ar-bLw"/>
-                                                <constraint firstItem="7u7-Rg-CPT" firstAttribute="leading" secondItem="j6h-gh-7Hy" secondAttribute="trailing" constant="8" symbolic="YES" id="ryB-fc-q1K"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="NRi-RZ-UlI"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="headLineLabel" destination="6uj-jg-0cJ" id="yol-89-Baa"/>
                                             <outlet property="industryLabel" destination="fvu-Ep-gwd" id="e3Z-2T-Nr0"/>
-                                            <outlet property="locationLabel" destination="7u7-Rg-CPT" id="VCd-ml-bHG"/>
                                             <outlet property="nameLabel" destination="hRe-UX-4w9" id="99q-03-H2P"/>
                                             <outlet property="profileImageView" destination="j6h-gh-7Hy" id="me7-IT-Ktq"/>
                                             <segue destination="YSw-w4-Tb5" kind="show" identifier="ShowDetailSegue" id="VPV-RW-oho"/>
@@ -220,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ao6-qd-xVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2671" y="348"/>
+            <point key="canvasLocation" x="2671" y="346"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="rUR-2m-Py2">
