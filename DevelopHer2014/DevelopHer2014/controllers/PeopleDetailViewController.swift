@@ -10,6 +10,10 @@ import UIKit
 
 class PeopleDetailViewController: UIViewController {
 
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var headlineLabel: UILabel!
+    @IBOutlet weak var industryLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +25,8 @@ class PeopleDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onConnect(sender: AnyObject) {
+    }
 
     /*
     // MARK: - Navigation
