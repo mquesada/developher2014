@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5516AE7EC09AA4B7FD8FBC57 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E4BCDA3E2CF93E7975371 /* libPods.a */; };
 		5F3390771A171A8500A89E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3390761A171A8500A89E3A /* AppDelegate.swift */; };
-		5F33907C1A171A8500A89E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F33907A1A171A8500A89E3A /* Main.storyboard */; };
 		5F33907E1A171A8500A89E3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F33907D1A171A8500A89E3A /* Images.xcassets */; };
 		5F3390811A171A8500A89E3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F33907F1A171A8500A89E3A /* LaunchScreen.xib */; };
 		5F33908D1A171A8500A89E3A /* DevelopHer2014Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F33908C1A171A8500A89E3A /* DevelopHer2014Tests.swift */; };
@@ -18,6 +17,7 @@
 		5F3390AA1A17259600A89E3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3390A91A17259600A89E3A /* User.swift */; };
 		5F3390AD1A172F8000A89E3A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3390AC1A172F8000A89E3A /* LocationManager.swift */; };
 		5F3390AF1A172FF500A89E3A /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3390AE1A172FF500A89E3A /* UserLocation.swift */; };
+		5FBB3B6E1A18016000734FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FBB3B6D1A18016000734FA8 /* Main.storyboard */; };
 		8F3798541A1757440027FB9F /* ParseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3798511A1757440027FB9F /* ParseCategory.swift */; };
 		8F3798551A1757440027FB9F /* ParseInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3798521A1757440027FB9F /* ParseInterest.swift */; };
 		8F3798561A1757440027FB9F /* ParseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3798531A1757440027FB9F /* ParseUser.swift */; };
@@ -50,13 +50,12 @@
 
 /* Begin PBXFileReference section */
 		1F6E4BCDA3E2CF93E7975371 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F3390711A171A8500A89E3A /* SavvyNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavvyNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3390711A171A8500A89E3A /* DevelopHer2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevelopHer2014.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F3390751A171A8500A89E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F3390761A171A8500A89E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F33907B1A171A8500A89E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F33907D1A171A8500A89E3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5F3390801A171A8500A89E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		5F3390861A171A8500A89E3A /* SavvyNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavvyNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3390861A171A8500A89E3A /* DevelopHer2014Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevelopHer2014Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F33908B1A171A8500A89E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F33908C1A171A8500A89E3A /* DevelopHer2014Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopHer2014Tests.swift; sourceTree = "<group>"; };
 		5F3390A31A1723E500A89E3A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = controllers/LoginViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		5F3390A91A17259600A89E3A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = models/User.swift; sourceTree = "<group>"; };
 		5F3390AC1A172F8000A89E3A /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = api/LocationManager.swift; sourceTree = "<group>"; };
 		5F3390AE1A172FF500A89E3A /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserLocation.swift; path = models/UserLocation.swift; sourceTree = "<group>"; };
+		5FBB3B6D1A18016000734FA8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F05F47F1A17212B00698A54 /* DevelopHer2014-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevelopHer2014-Bridging-Header.h"; sourceTree = "<group>"; };
 		8F3798511A1757440027FB9F /* ParseCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseCategory.swift; path = models/ParseCategory.swift; sourceTree = "<group>"; };
 		8F3798521A1757440027FB9F /* ParseInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseInterest.swift; path = models/ParseInterest.swift; sourceTree = "<group>"; };
@@ -129,8 +129,8 @@
 		5F3390721A171A8500A89E3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F3390711A171A8500A89E3A /* SavvyNet.app */,
-				5F3390861A171A8500A89E3A /* SavvyNetTests.xctest */,
+				5F3390711A171A8500A89E3A /* DevelopHer2014.app */,
+				5F3390861A171A8500A89E3A /* DevelopHer2014Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,12 +138,12 @@
 		5F3390731A171A8500A89E3A /* DevelopHer2014 */ = {
 			isa = PBXGroup;
 			children = (
+				5FBB3B6D1A18016000734FA8 /* Main.storyboard */,
 				D086B44F1A17658E0058D031 /* images */,
 				5F3390AB1A17259B00A89E3A /* models */,
 				5F3390A61A17240000A89E3A /* api */,
 				5F3390A51A1723F100A89E3A /* controllers */,
 				5F3390761A171A8500A89E3A /* AppDelegate.swift */,
-				5F33907A1A171A8500A89E3A /* Main.storyboard */,
 				5F33907D1A171A8500A89E3A /* Images.xcassets */,
 				5F33907F1A171A8500A89E3A /* LaunchScreen.xib */,
 				5F3390741A171A8500A89E3A /* Supporting Files */,
@@ -239,9 +239,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F3390701A171A8500A89E3A /* SavvyNet */ = {
+		5F3390701A171A8500A89E3A /* DevelopHer2014 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F3390901A171A8500A89E3A /* Build configuration list for PBXNativeTarget "SavvyNet" */;
+			buildConfigurationList = 5F3390901A171A8500A89E3A /* Build configuration list for PBXNativeTarget "DevelopHer2014" */;
 			buildPhases = (
 				721BE1AD7F8E03868220122E /* Check Pods Manifest.lock */,
 				5F33906D1A171A8500A89E3A /* Sources */,
@@ -253,14 +253,14 @@
 			);
 			dependencies = (
 			);
-			name = SavvyNet;
+			name = DevelopHer2014;
 			productName = DevelopHer2014;
-			productReference = 5F3390711A171A8500A89E3A /* SavvyNet.app */;
+			productReference = 5F3390711A171A8500A89E3A /* DevelopHer2014.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5F3390851A171A8500A89E3A /* SavvyNetTests */ = {
+		5F3390851A171A8500A89E3A /* DevelopHer2014Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F3390931A171A8500A89E3A /* Build configuration list for PBXNativeTarget "SavvyNetTests" */;
+			buildConfigurationList = 5F3390931A171A8500A89E3A /* Build configuration list for PBXNativeTarget "DevelopHer2014Tests" */;
 			buildPhases = (
 				5F3390821A171A8500A89E3A /* Sources */,
 				5F3390831A171A8500A89E3A /* Frameworks */,
@@ -271,9 +271,9 @@
 			dependencies = (
 				5F3390881A171A8500A89E3A /* PBXTargetDependency */,
 			);
-			name = SavvyNetTests;
+			name = DevelopHer2014Tests;
 			productName = DevelopHer2014Tests;
-			productReference = 5F3390861A171A8500A89E3A /* SavvyNetTests.xctest */;
+			productReference = 5F3390861A171A8500A89E3A /* DevelopHer2014Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F33906C1A171A8500A89E3A /* Build configuration list for PBXProject "SavvyNet" */;
+			buildConfigurationList = 5F33906C1A171A8500A89E3A /* Build configuration list for PBXProject "DevelopHer2014" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -307,8 +307,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F3390701A171A8500A89E3A /* SavvyNet */,
-				5F3390851A171A8500A89E3A /* SavvyNetTests */,
+				5F3390701A171A8500A89E3A /* DevelopHer2014 */,
+				5F3390851A171A8500A89E3A /* DevelopHer2014Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -325,9 +325,9 @@
 				D086B45D1A178D0F0058D031 /* logoutButton.png in Resources */,
 				D086B4651A17911B0058D031 /* logo.png in Resources */,
 				D03DC11B1A17E88C00DDC8EF /* fakeDetail.png in Resources */,
+				5FBB3B6E1A18016000734FA8 /* Main.storyboard in Resources */,
 				D03DC1201A17F82F00DDC8EF /* appIcon-80.png in Resources */,
 				D086B4531A17659F0058D031 /* home.png in Resources */,
-				5F33907C1A171A8500A89E3A /* Main.storyboard in Resources */,
 				D086B4541A17659F0058D031 /* peopleList.png in Resources */,
 				5F3390811A171A8500A89E3A /* LaunchScreen.xib in Resources */,
 				5F33907E1A171A8500A89E3A /* Images.xcassets in Resources */,
@@ -411,20 +411,12 @@
 /* Begin PBXTargetDependency section */
 		5F3390881A171A8500A89E3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5F3390701A171A8500A89E3A /* SavvyNet */;
+			target = 5F3390701A171A8500A89E3A /* DevelopHer2014 */;
 			targetProxy = 5F3390871A171A8500A89E3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5F33907A1A171A8500A89E3A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F33907B1A171A8500A89E3A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5F33907F1A171A8500A89E3A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -521,7 +513,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DevelopHer2014/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = SavvyNet;
+				PRODUCT_NAME = DevelopHer2014;
 				SWIFT_OBJC_BRIDGING_HEADER = "DevelopHer2014/DevelopHer2014-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -535,7 +527,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DevelopHer2014/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = SavvyNet;
+				PRODUCT_NAME = DevelopHer2014;
 				SWIFT_OBJC_BRIDGING_HEADER = "DevelopHer2014/DevelopHer2014-Bridging-Header.h";
 			};
 			name = Release;
@@ -554,7 +546,7 @@
 				);
 				INFOPLIST_FILE = DevelopHer2014Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = SavvyNetTests;
+				PRODUCT_NAME = DevelopHer2014Tests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevelopHer2014.app/DevelopHer2014";
 			};
 			name = Debug;
@@ -569,7 +561,7 @@
 				);
 				INFOPLIST_FILE = DevelopHer2014Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = SavvyNetTests;
+				PRODUCT_NAME = DevelopHer2014Tests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevelopHer2014.app/DevelopHer2014";
 			};
 			name = Release;
@@ -577,7 +569,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F33906C1A171A8500A89E3A /* Build configuration list for PBXProject "SavvyNet" */ = {
+		5F33906C1A171A8500A89E3A /* Build configuration list for PBXProject "DevelopHer2014" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F33908E1A171A8500A89E3A /* Debug */,
@@ -586,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F3390901A171A8500A89E3A /* Build configuration list for PBXNativeTarget "SavvyNet" */ = {
+		5F3390901A171A8500A89E3A /* Build configuration list for PBXNativeTarget "DevelopHer2014" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F3390911A171A8500A89E3A /* Debug */,
@@ -595,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F3390931A171A8500A89E3A /* Build configuration list for PBXNativeTarget "SavvyNetTests" */ = {
+		5F3390931A171A8500A89E3A /* Build configuration list for PBXNativeTarget "DevelopHer2014Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F3390941A171A8500A89E3A /* Debug */,
